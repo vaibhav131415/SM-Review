@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service Modernization Regression Suite" parallel = "tests">
+	
+	<test name = "SM Test - chrome">
+	   <parameter name ="browserType" value="chrome" />
+	   <classes>
+	      <class name = "runners.RunnerTest"/>
+	   </classes>
+	
+	</test>
+
+  <test name = "SM Test - firefox">
+	  <parameter name = "browserType" value="firefox" />
+	  <classes>
+	     <class name = "runners.RunnerTest"/>
+	  </classes>
+	
+	</test>
+
+ <test name = "SM Test - safari">
+	  <parameter name = "browserType" value="safari" />
+	  <classes>
+	     <class name = "runners.RunnerTest"/>
+	  </classes>
+	
+	</test>
+
+
+ 
+	
+	
+	
+	</suite>
